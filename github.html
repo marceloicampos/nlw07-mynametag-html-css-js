@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script async src="./script.js"></script>
+        <title>GitHub API</title>
+        <style>
+            .ul-none {
+                list-style-type: none;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="ul-none" id="user" style="width: 480px"></ul>
+        <form id="gitHubForm" style="width: 480px">
+            <div>
+                <input
+                    id="usernameInput"
+                    type="text"
+                    onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Reload for New Badge'"
+                    name="username"
+                    placeholder="Enter GitHub Username"
+                />
+            </div>
+            <br />
+            <div>
+                <input id="bInput" type="submit" value="Get Your Badge" />
+            </div>
+        </form>
+    </body>
+</html>

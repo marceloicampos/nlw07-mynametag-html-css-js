@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+}
+
+html,
+body {
+    --greyer: hsl(240, 9%, 89%);
+    --grayer: hsl(240, 7%, 78%);
+    --blacker: hsl(240, 6%, 13%);
+    /* variáveis de cores em  css*/
+
+    height: 100%;
+    /* html e body terão altura de 100% */
+
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    /* margin: 0; */
+}
+
+body {
+    display: grid;
+    /* visualizar o body em grade */
+
+    place-items: center;
+    /* os itens do body ficarão centralizados ao meio*/
+
+    background: #000;
+    /* background-image: url('./images/nlwheat.jpg'); */
+
+    /* height: 100%; */
+    /* Full height */
+
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* Center and scale the image nicely */
+}
+
+main {
+    background-image: url('./images/background.svg');
+    background-repeat: no-repeat;
+    width: 375px;
+    height: 812px;
+}
+
+.container {
+    max-width: 250px;
+    /* max-height: 488px; */
+    /* margin-top: 162px; */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    color: var(--greyer);
+}
+
+/* content 291px 488px*/
+
+.avatar {
+    width: 10rem;
+    margin: 11.5rem auto 0;
+    /* 0 top 0 right 0 bottom 0 left */
+    /* 0 top 0 sides 0 bottom */
+    /* 0 top         0 bottom */
+    /* 1 rem = 16px */
+
+    position: relative;
+    /* background-color: red; */
+    /* position relative permite que a div fique em posição relativa a página*/
+}
+
+/* PARA ENTENDER O POSICIONAMENTO: a div avatar fica relativa a página e o span fica absoluto em relação a div avatar*/
+
+.avatar span {
+    position: absolute;
+    /* position absolute permite que o span fique em posição absoluta superior a div*/
+    /* background-color: red; */
+    top: -25px;
+    left: -35px;
+    /* -15 px*/
+    /* em relação a página inteira */
+    z-index: 1;
+    /* z-index é eixo de profundidade da imagem */
+}
+
+.avatar > img {
+    width: 10rem;
+    height: 11.5rem;
+    object-fit: cover;
+    /*10rem = 160px, 11.5rem = 184px e cover é cobrir a imagem, ou seja, o cover corta a imagem bem centralizada tirando as laterais, sem o cover ocorre um redimensionamento da imagem fazendo com ela fique desproporcional. O cover "cortar" a imagem exatamente nas medidas informadas*/
+
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    /* https://bennettfeely.com/clippy/ */
+}
+
+/* .foto {
+    width: 185px;
+    height: 185px;
+} */
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+}
+
+a {
+    color: var(--grayer);
+    text-decoration: none;
+    font-weight: 400;
+    margin-top: 0.25rem;
+
+    display: flex;
+    gap: 0.75rem;
+
+    justify-content: center;
+    align-items: center;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+p {
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+ul {
+    margin-top: 4rem;
+
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+    gap: 0.5rem;
+
+    justify-content: center;
+}
+
+/* comentário em css*/
