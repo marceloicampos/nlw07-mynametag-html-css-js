@@ -48,10 +48,16 @@ function requestUser(username) {
 
         // Create the html markup for each li
         li.innerHTML = `
-                <img src="${data.html_url}.png" alt="avatar"/>
+                <img style="
+                width: 10rem;
+                height: 10rem;
+                object-fit: cover; 
+                border-radius: 460px;"
+                src="${data.html_url}.png" alt="avatar"/>
                 <p>${data.name}</p>
                 <p><a href="${data.html_url}" target="_blank">${data.login}</a></p>
                 <p>${data.bio}</p>
+                <a href="./index.html">Voltar para o App Name Tag</a>
             `
 
         // Append each li to the ul
