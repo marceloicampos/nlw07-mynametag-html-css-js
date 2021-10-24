@@ -55,9 +55,9 @@ function requestUser(username) {
                 border-radius: 460px;"
                 src="${data.html_url}.png" alt="avatar"/>
                 <p>${data.name}</p>
-                <p><a href="${data.html_url}" target="_blank">${data.login}</a></p>
-                <p>${data.bio}</p>
-                <a href="./index.html">Voltar para o App Name Tag</a>
+                <p><img src="images/github.svg" alt="logo github" />&nbsp;<a href="${data.html_url}" target="_blank">${data.login}</a></p>
+                <p style="max-width: 291px; text-align: justify;">${data.bio}</p>
+                <a href="./index.html">BACK to App Name Tag</a>
             `
 
         // Append each li to the ul

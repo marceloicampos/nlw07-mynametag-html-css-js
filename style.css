@@ -48,7 +48,7 @@ main {
 }
 
 .container {
-    max-width: 250px;
+    max-width: 291px;
     /* max-height: 488px; */
     /* margin-top: 162px; */
     margin-left: auto;
@@ -77,8 +77,8 @@ main {
 
 .avatar span {
     position: absolute;
-    /* position absolute permite que o span fique em posição absoluta superior a div*/
     /* background-color: red; */
+    /* position absolute permite que o span fique em posição absoluta superior a div*/
     top: -25px;
     left: -35px;
     /* -15 px*/
@@ -141,7 +141,7 @@ p {
 }
 
 ul {
-    margin-top: 2rem;
+    margin-top: 4rem;
 
     list-style: none;
     padding: 0;
