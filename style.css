@@ -41,10 +41,17 @@ body {
 }
 
 main {
-    background-image: url('./images/background.svg');
+    /* background-image: url('./images/background.svg');
     background-repeat: no-repeat;
+    background-position: center;
     width: 375px;
-    height: 812px;
+    height: 812px; */
+
+    background: url('./images/background.svg') no-repeat center;
+    width: 100vw;
+    min-height: 812px;
+    height: 85vh;
+    /* height: 100vh; */
 }
 
 .container {
